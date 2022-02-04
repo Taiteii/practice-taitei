@@ -13,6 +13,7 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    indent: ["error", 2],
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
     "no-restricted-syntax": ["error", { selector: "TSEnumDeclaration", message: "Don't declare enums" }],
     "prefer-arrow-callback": "error",
