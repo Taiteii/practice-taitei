@@ -1,22 +1,14 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import { Layout } from "src/components/layout";
+import { ButtonPanel } from "src/components/ButtonPanel";
+import { Display } from "src/components/Display";
 
-const Home: NextPage = () => {
-  const handleClick = () => {
-    window.alert("Hello, World!");
-  };
-
+const Calculator: NextPage = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h2>Home</h2>
-      <button onClick={handleClick}>Button</button>
-    </Layout>
+    <div>
+      <Display />
+      <ButtonPanel />
+    </div>
   );
 };
 
-export default Home;
+export default Calculator;
